@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         resultLabel = findViewById(R.id.resultText)
         button = findViewById(R.id.button)
 
+        val toast = Toast.makeText(this@MainActivity, "Введите числа", Toast.LENGTH_LONG)
+        toast.setGravity(Gravity.CENTER, 0, 0)
+        toast.show()
+
         button.setOnClickListener {
 
             val minimumResult = Integer.parseInt(minimumInput.text.toString())
